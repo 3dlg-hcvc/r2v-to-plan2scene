@@ -1,0 +1,6 @@
+{
+  "pil_font": {
+    "path": "Pillow/Tests/fonts/FreeMono.ttf",
+    "size": 16
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "max_door_perpendicular_offset": 20.0,
+  "wall_join_margin": 5.0,
+  "split_walls": {
+    "enabled": true,
+    "max_iter": 50
+  },
+  "eliminate_false_rooms": {
+    "enabled": true,
+    "threshold": 0.04
+  },
+  "straighten_walls": {
+    "enabled": false,
+    "cutoff_gradient": 0.1,
+    "max_iter": 500
+  },
+  "room_label_assignment_overlap": 0.4
+}
