@@ -10,7 +10,7 @@ pip install -r requirements.txt
 To convert a raster-to-vector output to the scene.json format, run the following command.
 ```bash
 export PYTHONPATH=./code/src
-python convert.py [Output path] [Path to raster-to-vector output file] --scale-factor [Scale factor] --scene-defaults scene_defaults.json --r2v-labels-path sample_input/r2v_labels.json  
+python convert.py [Output path] [Path to raster-to-vector output file] --scale-factor [Scale factor]
 
 # The scale factor is used to convert pixel coordinates provided by raster-to-vector into meters.
 
