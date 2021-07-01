@@ -17,10 +17,14 @@ python convert.py [Output path] [Path to raster-to-vector output file] --scale-f
 # Example
 python convert.py ./outputs/ ./sample_input/sample_r2v_output.txt --scale-factor 0.08
 ```
+__Note:__ This tool supports processing of the R2V __annotation format__ as well. You can find many example floorplans in this format in the [R2V code repository](https://github.com/art-programmer/FloorplanTransformation). 
+The floorplan annotator they used is also available in the same repository.
+The R2V annotation format is very similar to the R2V output format. However, the room type labels are represented as axis-aligned bounding boxes instead of properties of the wall line segment. 
+If you are processing an r2v annotation file, make sure to provide `--r2v-annot` flag as a command-line argument.
 
 The outputs directory has the following files:
  - *.scene.json file describing the house architecture.
- - *.objectaabb.json file describing axis aligned bounding boxes of object icons.
+ - *.objectaabb.json file describing axis-aligned bounding boxes of object icons.
  - Sketches of floorplan and the rooms. Use these for debugging purposes.
 
 ## Previewing results
